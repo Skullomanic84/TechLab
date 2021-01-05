@@ -25,7 +25,8 @@ body {
 HEADER STYLING
 ***********************/
 header {
-    height: 100vh;
+    height: 90vh;
+    margin-bottom: 20px;
 }
 
 .header__info {
@@ -43,6 +44,15 @@ header {
     font-weight: 700;
 }
 
+.heading__text {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 700;
+}
+/********ABOUT SECTION***/
+#about {
+    height: 70vh;
+}
 /************************
 UTILITIES
 ************************/
@@ -79,7 +89,7 @@ background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
  animation: morph 8s ease-in-out infinite;
  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
  transition: all .5s ease-in-out;
- z-index: 5;
+ /* z-index: 5; */
 }
 
 @keyframes morph {
