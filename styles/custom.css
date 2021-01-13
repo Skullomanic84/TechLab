@@ -1,18 +1,19 @@
-/*********************
-UNIVERSAL STYLING
-*********************/
-
 :root {
 	--primary: #ff5500;
 	--secondary: #ff6d24;
     --third: #623cea; 
     --dark: #1c1e22;
-    --grey: #706f6f;  
+    --grey: #706f6f; 
+    --bg_white: #fff; 
 }
 
+/*********************
+GLOBAL STYLING
+*********************/
 * {
     margin: 0;
     padding: 0;
+    outline: none !important;
     box-sizing: border-box;  
 }
 
@@ -20,39 +21,86 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     line-height: 1.5;
-}
-/***********************
-HEADER STYLING
-***********************/
-header {
-    height: 90vh;
-    margin-bottom: 20px;
+    overflow-x: hidden;
+    background-color: var(--bg_white);
 }
 
-.header__info {
-    padding-top: 5rem;
+img {
+    max-width: 100%;
+    vertical-align: middle;
 }
+
+ul {
+    list-style: none;
+}
+
+.bg-light {
+    background-color: var(--bg_white) !;
+}
+
 .sub__heading {
     font-size: 0.75rem;
     font-weight: 600;
     color: var(--primary);
     
 }
+/***********************
+NAV AND HEADER SECTION
+***********************/
+.navbar > .container {
+padding: 10px 0;
+}
+ .navbar-nav .nav-item .nav-link {
+     font-weight: 600;
+ }
+
+ .navbar-nav .nav-item .nav-link.active,
+ .navbar-nav .nav-item .nav-link:hover{
+    color: var(--primary);
+}
+
+header {
+    min-height: 100vh;
+    padding: 80px 0;
+}
+
 .banner__text {
-    text-transform: uppercase;
-    font-size: 4rem;
+    /* text-transform: uppercase; */
+    font-size: 3.6rem;
     font-weight: 700;
 }
 
-.heading__text {
-    text-transform: uppercase;
-    font-size: 3rem;
+.header__text {
+    font-size: 2.8rem;
     font-weight: 700;
+}
+
+.banner__image img {
+    max-width: 650px;
+    width: 100%;
 }
 /********ABOUT SECTION***/
 #about {
-    height: 70vh;
+    min-height: 70vh;
+    margin-top: -50px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /************************
 UTILITIES
 ************************/
@@ -76,8 +124,6 @@ UTILITIES
     background-color: var(--dark) !important;
 
 }
-
-
 
 /************************
 ANIMATED BORDER
