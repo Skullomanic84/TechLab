@@ -44,6 +44,22 @@ ul {
     color: var(--primary);
     
 }
+.banner__text {
+    /* text-transform: uppercase; */
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+.header__text {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.sub__title{
+    font-size: 3.8rem;
+    font-weight: 700; 
+    line-height: 1;
+}
 /***********************
 NAV AND HEADER SECTION
 ***********************/
@@ -66,7 +82,7 @@ header {
 
 .banner__text {
     /* text-transform: uppercase; */
-    font-size: 3.6rem;
+    font-size: 5rem;
     font-weight: 700;
 }
 
@@ -81,11 +97,25 @@ header {
 }
 /********ABOUT SECTION***/
 #about {
-    min-height: 70vh;
-    margin-top: -50px;
+    /* min-height: 100vh; */
+    margin-top: -10px;
 }
 
+.card-img-top {
+    max-width: 100%;
+    max-height: 200px;
+    vertical-align: middle;
+    margin: 20px auto;
+}
 
+.card {
+    border: none;
+}
+ .card-title {
+     margin-bottom: 10px;
+     font-weight: 600;
+     font-size: 25px;
+ }
 
 
 
@@ -125,6 +155,10 @@ UTILITIES
 
 }
 
+.list-group-item {
+    border: none;
+}
+
 /************************
 ANIMATED BORDER
 ************************/
@@ -154,3 +188,31 @@ background: linear-gradient(45deg, var(--dark) 0%, var(--grey) 100%);
        background: linear-gradient(45deg, var(--dark) 0%, var(--grey) 100%);
    } 
 }
+
+.mini__shape {
+    /* height: 200px;
+    width: 200px; */
+    background: linear-gradient(45deg, var(--dark) 0%, var(--grey) 100%);
+     animation: morph 8s ease-in-out infinite;
+     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+     transition: all .5s ease-in-out;
+     /* z-index: 5; */
+    }
+    
+    @keyframes morph {
+     0% {
+               border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+               background: linear-gradient(45deg, var(--dark) 0%, var(--grey) 100%);
+       } 
+       
+       50% {
+               border-radius:  30% 60% 70% 40% / 50% 60% 30% 60%;
+               background: linear-gradient(45deg, var(--dark) 0%, var(--grey) 70%);
+       }
+     
+       100% {
+           border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+           background: linear-gradient(45deg, var(--dark) 0%, var(--grey) 100%);
+       } 
+    }
+    
